@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>LionFire.Orleans.Persistence.NATS</PackageId>
+    <Title>NATS Persistence Provider for Microsoft Orleans</Title>
+    <Description>Microsoft Orleans persistence providers backed by NATS JetStream KV</Description>
+    <PackageTags>$(PackageTags) NATS Orleans</PackageTags>
+    <TargetFrameworks>$(DefaultTargetFrameworks)</TargetFrameworks>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AssemblyName>LionFire.Orleans.Persistence.NATS</AssemblyName>
+    <RootNamespace>LionFire.Orleans.Persistence.NATS</RootNamespace>
+    <DefineConstants>$(DefineConstants);PERSISTENCE_NATS</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Orleans.Reminders" />
+    <PackageReference Include="Microsoft.Orleans.Runtime" />
+    <PackageReference Include="NATS.Net" />
+  </ItemGroup>
+
+</Project>
